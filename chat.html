@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Luna AI 💙</title>
+</head>
+
+<body style="font-family: Arial; background:#111; color:white; text-align:center;">
+
+  <h1>🌙 Luna AI</h1>
+
+  <p>Converse comigo 👇</p>
+
+  <textarea id="msg" rows="4" cols="40" placeholder="Digite aqui..."></textarea>
+  <br><br>
+
+  <button onclick="enviar()">Enviar</button>
+
+  <p id="resposta"></p>
+
+  <script>
+    function enviar() {
+      let texto = document.getElementById("msg").value;
+
+      document.getElementById("resposta").innerText =
+        "Luna: Em breve vou responder com IA 💙\nVocê escreveu: " + texto;
+    }
+  </script>
+
+</body>
+</html>
